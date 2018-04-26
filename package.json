@@ -1,0 +1,25 @@
+{
+  "name": "workflow",
+  "version": "1.0.0",
+  "description": "Dev workflow with NPM, SASS, Gulp and more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjDigitalDesign/workflow.git"
+  },
+  "keywords": [
+    "NPM",
+    "SASS",
+    "Bootstrap",
+    "Gulp"
+  ],
+  "author": "AJ Jardiah Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AjDigitalDesign/workflow/issues"
+  },
+  "homepage": "https://github.com/AjDigitalDesign/workflow#readme"
+}
