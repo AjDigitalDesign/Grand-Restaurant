@@ -1,9 +1,8 @@
-$primarybg : blue;
-$color : #ffff;
-
 body{
-  background-color: $primarybg;
-  color: $color;
+  background-color: gray;
+  color: yellow;
+}
 
-
+h1:hover{
+  transition: color 1s ease;
 }

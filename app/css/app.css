@@ -1,4 +1,9 @@
 body {
-  background-color: blue;
-  color: #ffff;
+  background-color: gray;
+  color: yellow;
+}
+
+h1:hover {
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
 }
