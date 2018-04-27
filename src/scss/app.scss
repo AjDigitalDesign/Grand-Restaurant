@@ -1,6 +1,9 @@
+$primarybg : blue;
+$color : #ffff;
 
-$black: '#000';
 body{
-  background-color: red;
-  color: $black;
+  background-color: $primarybg;
+  color: $color;
+
+
 }
