@@ -7,18 +7,22 @@ var browserify = require('gulp-browserify');
 var clean = require('gulp-clean');
 var concat = require('gulp-concat');
 var merge = require('merge-stream');
+var newer = require('gulp-newer');
+var imagemin = require('gulp-imagemin');
 
 var SOURCEPATHS = {
    sassSource : 'src/scss/*.scss',
    htmlSource : 'src/*.html',
-   jsSource : 'src/js/**'
+   jsSource : 'src/js/**',
+   imgSource : 'src/img/**'
 }
 
 
 var APPATH = {
   root: 'app/',
   css : 'app/css',
-  js : 'app/js'
+  js : 'app/js',
+  img : 'app/img'
 }
 
 
@@ -47,6 +51,15 @@ gulp.task('sass', function(){
       .pipe(gulp.dest(APPATH.css));
 });
 
+// Minify all images
+gulp.task('images', function(){
+  return gulp.src(SOURCEPATHS.imgSource)
+  .pipe(newer(APPATH.img))
+  .pipe(imagemin())
+  .pipe(gulp.dest(APPATH.img));
+});
+
+
 gulp.task('scripts', ['clean-scripts'], function(){
   gulp.src(SOURCEPATHS.jsSource)
     .pipe(concat('main.js'))
@@ -69,7 +82,7 @@ gulp.task('serve', ['sass'], function(){
     })
 });
 
-gulp.task('watch', ['serve', 'sass','copy', 'clean-html','clean-scripts', 'scripts'], function(){
+gulp.task('watch', ['serve', 'sass','copy', 'clean-html','clean-scripts', 'scripts', 'images'], function(){
   gulp.watch([SOURCEPATHS.sassSource], ['sass']);
   gulp.watch([SOURCEPATHS.htmlSource], ['copy']);
   gulp.watch([SOURCEPATHS.jsSource], ['scripts']);
