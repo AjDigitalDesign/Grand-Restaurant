@@ -25,6 +25,7 @@
   "devDependencies": {
     "bootstrap": "^4.1.0",
     "browser-sync": "^2.23.7",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-browserify": "^0.5.1",
@@ -39,9 +40,12 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "jquery": "^3.3.1",
+    "jquery.easing": "^1.4.1",
     "merge-stream": "^1.0.1",
     "mustache": "^2.3.0",
-    "popper.js": "^1.14.3"
+    "peer": "^0.2.8",
+    "popper.js": "^1.14.3",
+    "scrollreveal": "^3.4.0"
   },
   "dependencies": {}
 }

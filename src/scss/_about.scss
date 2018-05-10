@@ -1,0 +1,33 @@
+#aboutUs{
+    color: $white;
+    img{
+        max-width: 100%;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
+        margin-top: -20px;
+    }
+    h2{
+        font-size: 2rem;
+        padding-top: 10px;
+        font-weight: 600;
+    }
+    hr{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    p{
+        text-align: center;
+    }
+    @media (min-width: 768px){
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.15rem;
+            font-weight: 100;
+        }
+    }
+
+}
+
+

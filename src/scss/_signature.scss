@@ -1,0 +1,27 @@
+.signaturerecipes{
+    background-image: url('/img/bg-testmonial.png');
+    background-position: center center;
+    @include background-cover;
+    color: $white;
+    h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    hr{
+       border-color: $red;
+       padding-bottom: 10px;
+    }
+    p{
+        text-align: center;
+    }
+    @media(min-width: 768px){
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.15rem;
+            font-weight: 100;
+        }
+        
+    }
+}

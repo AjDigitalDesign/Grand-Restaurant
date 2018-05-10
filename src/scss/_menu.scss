@@ -1,0 +1,74 @@
+#menu{
+    background-color: $menu-bg;
+    .section-title{
+        margin-top: -30px;
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        hr{
+            border-color: $price;
+            padding-bottom: 20px;
+        }
+    }
+    .menu-content{
+        img{
+           
+            width: 64px;
+            height: 64px;
+        }
+        h5{
+            font-size: 1rem;
+            text-align: left;
+            font-weight: 400;
+        }
+        p.price{
+            font-size: 1rem;
+            color: $price;
+            font-weight: 300;
+        }
+        p.menu-description{
+            margin-top: -10px;
+            font-weight: 100;
+        }
+
+    }
+    @media (min-width: 768px){
+        .section-title{
+            margin-bottom: 30px;
+            h2{
+                font-size: 2.5rem;
+            }
+
+        }
+
+    }
+    
+}
+
+#menu-img{
+    .col-md-3{
+        padding: 0;
+    }
+
+    .main-menu-img{
+        img{
+            max-width: 100%;
+            
+        }
+    }
+    @media(min-width: 768px){
+        div.col-md-3{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            max-width: 100%;
+        }
+
+    }
+}
+
+  
+  

@@ -1,1 +1,350 @@
-<!-- partial:partials/_header.html --><!DOCTYPE html><html><head><meta charset="utf-8"><title>Hello World</title><link rel="stylesheet" href="css/app.css"></head><body><!-- partial --><div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"><h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5><nav class="my-2 my-md-0 mr-md-3"><a class="p-2 text-dark" href="#">Features</a> <a class="p-2 text-dark" href="#">Enterprise</a> <a class="p-2 text-dark" href="#">Support</a> <a class="p-2 text-dark" href="#">Pricing</a></nav><a class="btn btn-outline-primary" href="#">Sign up</a></div><section><div id="carouselExampleControls" class="carousel slide" data-ride="carousel"><div class="carousel-inner"><div class="carousel-item active"><img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="First slide"></div><div class="carousel-item"><img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="Second slide"></div><div class="carousel-item"><img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="Third slide"></div></div><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span></a></div></section><div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"><h1 class="display-4">Pricing</h1><p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p></div><div class="container"><div class="card-deck mb-3 text-center"><div class="card mb-4 box-shadow"><div class="card-header"><h4 class="my-0 font-weight-normal">Free</h4></div><div class="card-body"><h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1><ul class="list-unstyled mt-3 mb-4"><li>10 users included</li><li>2 GB of storage</li><li>Email support</li><li>Help center access</li></ul><button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button></div></div><div class="card mb-4 box-shadow"><div class="card-header"><h4 class="my-0 font-weight-normal">Pro</h4></div><div class="card-body"><h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1><ul class="list-unstyled mt-3 mb-4"><li>20 users included</li><li>10 GB of storage</li><li>Priority email support</li><li>Help center access</li></ul><button type="button" class="btn btn-lg btn-block btn-primary">Get started</button></div></div><div class="card mb-4 box-shadow"><div class="card-header"><h4 class="my-0 font-weight-normal">Enterprise</h4></div><div class="card-body"><h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1><ul class="list-unstyled mt-3 mb-4"><li>30 users included</li><li>15 GB of storage</li><li>Phone and email support</li><li>Help center access</li></ul><button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button></div></div></div><footer class="pt-4 my-md-5 pt-md-5 border-top"><div class="row"><div class="col-12 col-md"><img class="mb-2" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> <small class="d-block mb-3 text-muted">&copy; 2017-2018</small></div><div class="col-6 col-md"><h5>Features</h5><ul class="list-unstyled text-small"><li><a class="text-muted" href="#">Cool stuff</a></li><li><a class="text-muted" href="#">Random feature</a></li><li><a class="text-muted" href="#">Team feature</a></li><li><a class="text-muted" href="#">Stuff for developers</a></li><li><a class="text-muted" href="#">Another one</a></li><li><a class="text-muted" href="#">Last time</a></li></ul></div><div class="col-6 col-md"><h5>Resources</h5><ul class="list-unstyled text-small"><li><a class="text-muted" href="#">Resource</a></li><li><a class="text-muted" href="#">Resource name</a></li><li><a class="text-muted" href="#">Another resource</a></li><li><a class="text-muted" href="#">Final resource</a></li></ul></div><div class="col-6 col-md"><h5>About</h5><ul class="list-unstyled text-small"><li><a class="text-muted" href="#">Team</a></li><li><a class="text-muted" href="#">Locations</a></li><li><a class="text-muted" href="#">Privacy</a></li><li><a class="text-muted" href="#">Terms</a></li></ul></div></div></footer></div></body><script type="text/javascript" src="js/main.js"></script></html>
+<!-- partial:partials/_header.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Grand Restaurant</title>
+  </head>
+  <body>
+
+<!-- partial -->
+
+<!-- partial:partials/_nav.html -->
+<nav  class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <a class="navbar-brand" href="#">Grand Restaurant</a>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsupportcontent" aria-controls="navbarsupportcontent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsupportcontent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Faq</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+      
+        </div>
+      
+      </nav>
+<!-- partial -->
+
+<!-- partial:partials/_jumpotron.html -->
+<header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>GRAND RESTAURANT</strong>
+          </h1>
+          <hr>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <p class="text-faded mb-5">At Grand Restaurant customers can get delicious, locally- and 
+            sustainably-sourced meals on their trays just minutes after they place an order.</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger header-btn" href="#about">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<!-- partial -->
+
+<!-- partial:partials/_about-us.html -->
+<section id="aboutUs" class="bg-primary">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-4">
+                <div class="about-img">
+                    <img src="img/bg-about.png" alt="About Us">
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8">
+                <div class="about-content">
+                    <h2 class="text-center">Our Story</h2>
+                    <hr class="titleborder">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in veritatis distinctio? Reiciendis cum harum in, magni aspernatur minus nesciunt. Earum, iure! Dolore numquam aspernatur voluptatum pariatur possimus maiores id.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- partial -->
+
+<!-- partial:partials/_testimonial.html -->
+<section class="signaturerecipes">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="singnaturerecipes-content">
+                    <h2>Signature Recepies</h2>
+                    <hr class="title-border">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad animi atque officiis. Nulla, culpa beatae modi eum necessitatibus hic optio distinctio dolore, aliquam numquam laboriosam. Modi libero temporibus cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consequatur maiores incidunt dicta minus omnis accusantium recusandae qui perspiciatis dolor. Itaque quis placeat, quasi exercitationem tenetur deserunt deleniti similique quibusdam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- partial -->
+
+<!-- partial:partials/_menu.html -->
+<section id="menu">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Menu</h2>
+            <hr class="menu-border">
+        </div>
+
+            <div class="menu-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled menu-item">
+                            <li class="media">
+                                <img class="mr-3 menu-img" src="img/menu-img1.png" alt="">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">TOASTED BREADS & BEEF DRIPPING BUTTER</h5>
+                                    <p class="price">$8.99</p>
+                                    <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                        <div class="col-md-6">
+                            <ul class="list-unstyled menu-item">
+                                <li class="media">
+                                    <img class="mr-3 menu-img" src="img/menu-img1.png" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">TOASTED BREADS & BEEF DRIPPING BUTTER</h5>
+                                        <p class="price">$8.99</p>
+                                        <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list-unstyled menu-item">
+                                <li class="media">
+                                    <img class="mr-3 menu-img" src="img/menu-img1.png" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">TOASTED BREADS & BEEF DRIPPING BUTTER</h5>
+                                        <p class="price">$8.99</p>
+                                        <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list-unstyled menu-item">
+                                <li class="media">
+                                    <img class="mr-3 menu-img" src="img/menu-img1.png" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">TOASTED BREADS & BEEF DRIPPING BUTTER</h5>
+                                        <p class="price">$8.99</p>
+                                        <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list-unstyled menu-item">
+                                <li class="media">
+                                    <img class="mr-3 menu-img" src="img/menu-img1.png" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">TOASTED BREADS & BEEF DRIPPING BUTTER</h5>
+                                        <p class="price">$8.99</p>
+                                        <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list-unstyled menu-item">
+                                <li class="media">
+                                    <img class="mr-3 menu-img" src="img/menu-img1.png" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">TOASTED BREADS & BEEF DRIPPING BUTTER</h5>
+                                        <p class="price">$8.99</p>
+                                        <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list-unstyled menu-item">
+                                <li class="media">
+                                    <img class="mr-3 menu-img" src="img/menu-img1.png" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">TOASTED BREADS & BEEF DRIPPING BUTTER</h5>
+                                        <p class="price">$8.99</p>
+                                        <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list-unstyled menu-item">
+                                <li class="media">
+                                    <img class="mr-3 menu-img" src="img/menu-img1.png" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">TOASTED BREADS & BEEF DRIPPING BUTTER</h5>
+                                        <p class="price">$8.99</p>
+                                        <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos </p>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<!-- partial -->
+<!-- partial:partials/_menu-img.html -->
+<div id="menu-img">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="main-menu-img">
+                    <img src="img/menu-img1.png" alt="img">
+                </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="main-menu-img">
+                        <img src="img/menu-img2.png" alt="img">
+                    </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="main-menu-img">
+                        <img src="img/menu-img3.png" alt="img">
+                    </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="main-menu-img">
+                        <img src="img/menu-img1.png" alt="img">
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- partial -->
+
+<!-- partial:partials/_footer.html -->
+<div id="foot-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="about-section">
+          <h5 class="display-5">Grand Restaurant</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="sitemap">
+          <h5 class="display-5">Sitemap</h5>
+          <ul class="sitmap-list">
+            <li><a href="#">What we do</a></li>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">projects</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="category">
+            <h5 class="display-5">Category</h5>
+            <ul class="category-item">
+              <li><a href="#">Concerting</a></li>
+              <li><a href="#">Decoration</a></li>
+              <li><a href="#">Building</a></li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+          <div class="footermenu">
+            <h5 class="display-5">Menu</h5>
+            <ul class="menu-item">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li>Projects</li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="footer-contact">
+          <h5 class="display-5">Contact Us</h5>
+          <ul class="contact-item">
+            <li><i class="fa fa-phone"></i><a href="#">1800-000-9000</a></li>
+            <li><i class="fa fa-paper-plane-o"></i><a href="#">1900 Liberty Bell</a></li>
+            <li><i class="fa fa-envelope-o"></i><a href="#">info@domian.com</a></li>
+          </ul>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="copyright">
+          <p>&copy;All Right Reserved 2018</p>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="developer">
+          <p>Developed By: AJ Digital Design</p>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/main.js" ></script>
+  </body>
+</html>
+<!-- partial -->
+

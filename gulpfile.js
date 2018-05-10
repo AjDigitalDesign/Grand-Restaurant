@@ -17,6 +17,7 @@ var htmlmin = require('gulp-htmlmin');
 
 var SOURCEPATHS = {
    sassSource : 'src/scss/*.scss',
+   sassApp : 'src/scss/app.scss',
    htmlSource : 'src/*.html',
    htmPartialsSource : 'src/partials/*.html',
    jsSource : 'src/js/**',
@@ -28,7 +29,8 @@ var APPATH = {
   root: 'app/',
   css : 'app/css',
   js : 'app/js',
-  img : 'app/img'
+  img : 'app/img',
+  fonts : 'app/fonts'
 }
 
 
@@ -53,15 +55,22 @@ gulp.task('html', function(){
 });
 
 gulp.task('sass', function(){
+  var fontAwesme = gulp.src('./node_modules/font-awesome/css/font-awesome.css')
   var bootstrapCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css')
+  
   var sassFiles;
 
-  sassFiles = gulp.src(SOURCEPATHS.sassSource)
+  sassFiles = gulp.src(SOURCEPATHS.sassApp)
       .pipe(prefix('last 2 versions'))
       .pipe(sass({outputStyle: 'expanded'}).on('error',sass.logError))
-    return merge(sassFiles, bootstrapCSS)
+    return merge(sassFiles, fontAwesme, bootstrapCSS)
       .pipe(concat('app.css'))
       .pipe(gulp.dest(APPATH.css));
+});
+
+gulp.task('moveFonts', function(){
+  gulp.src('./node_modules/font-awesome/fonts/*.{eot,svg,ttf,woff,woof2,otf}')
+  .pipe(gulp.dest(APPATH.fonts));
 });
 
 // Minify all images
@@ -127,7 +136,7 @@ gulp.task('serve', ['sass'], function(){
     })
 });
 
-gulp.task('watch', ['serve', 'sass', 'clean-html','clean-scripts', 'scripts', 'images', 'html'], function(){
+gulp.task('watch', ['serve', 'sass', 'clean-html','clean-scripts', 'scripts', 'moveFonts', 'images', 'html'], function(){
   gulp.watch([SOURCEPATHS.sassSource], ['sass']);
   //gulp.watch([SOURCEPATHS.htmlSource], ['copy']);
   gulp.watch([SOURCEPATHS.jsSource], ['scripts']);

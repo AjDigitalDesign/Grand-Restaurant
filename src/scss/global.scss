@@ -1,0 +1,44 @@
+body,
+html{
+    width: 100%;
+    height: 100%;
+    
+}
+body{
+    @include Roboto-font;
+}
+
+a{
+    color: $white;
+    @include transition-all;
+    &:hover{
+        color: $red;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    @include Roboto-font;
+}
+
+h2{
+    @include Kaushan-font;
+}
+
+.bg-primary{
+    background-color: $red !important;
+}
+
+section{
+    padding: 8rem 0;
+}
+
+hr{
+    max-width: 60px;
+    border-width: 3px;
+    border-color: $white;
+}
+ ul{
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
